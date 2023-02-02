@@ -1,14 +1,10 @@
-import Image from "next/image";
-import { Inter } from "@next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
-
+import BasicLayout from "../layouts/BasicLayout";
 export default function Home() {
   return (
     <>
-      <div className="home">
-        <h1>Estamos en el cliente de next</h1>
-      </div>
+      <BasicLayout>
+        <h1>Estamos en home</h1>
+      </BasicLayout>
     </>
   );
 }
